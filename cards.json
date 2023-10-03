@@ -13,5 +13,10 @@
         "Title": "Simon game",
         "Des": "A memory-based game involving four colors played in sequence for user replication",
         "Link": "../projects/10 The Simon Game/Index.html"
+    },
+    {
+        "Title": "Weather app",
+        "Des": "An application with a search bar to retrieve weather information for any desired location",
+        "Link": "../projects/11 Weather App/index.html"
     }
 ]
