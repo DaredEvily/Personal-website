@@ -1,0 +1,202 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Dancing Script', cursive;
+    user-select: none;
+}
+
+body{
+    background-color: #A1CCD1;
+    color: #E9B384;
+}
+.up{
+    color: black;
+    padding: 2% 2% 2% 2%;
+    margin: 0px;
+    width: 15%;
+    height: 15%;
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.in{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 600px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 1px ;
+    overflow: hidden;
+}
+.img1{
+    width: 15%;
+    height: 100%;
+    padding: 2px;
+    
+}
+.img2{
+    width: 30%;
+    height: 80%;
+}
+.img3{
+    width: 17%;
+    height: 60%;
+    padding-right: 20px;
+}
+.img4{
+    width: 14%;
+    height: 100%;
+}
+.title{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #E9B384 ;
+    border-bottom-left-radius: 40px;
+
+}
+
+h1{
+    font-size: 40px;
+    flex: 3;
+    text-align: center;
+    padding: 4%;
+}
+h2{
+    text-align: center;
+}
+span{
+    align-self:first baseline;
+    margin-right: 5px;
+}
+h3{
+    text-align: center;
+    padding: 1% 0% 0% 1%;
+}
+h6{padding: 0px;margin: 0px 0px -30px 0px;}
+.citysite{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1% 2% 1% 0%;
+}
+.app{
+    height: 80%;
+}
+
+.form{flex: 5;height: 100%;display: flex;align-items: center;justify-content: center;}
+#search:placeholder-shown{
+    text-align: center;
+    width:70%;
+    font-size: 20px;
+    border-radius: 30px;
+    height: 30px;
+    margin: 1%;
+    transition: .5s;
+    border: 1px solid #E9B384;
+    outline: none;
+}
+#search,#search:focus{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:25px ;
+    width: 90%;
+    height: 50%;
+    border-radius: 30px;  
+    outline: none;
+    border: 1px solid #E9B384;
+}
+button{background-color:transparent;border:none; color: #E9B384;cursor: pointer;transition: .3s;align-self: center;display: initial;margin-left:2%;position: relative;
+    top: 5px;}
+#search:placeholder-shown~button{display:none;}
+button:active{color: black;}
+
+.main{
+    display: grid; 
+    width: 100%;
+    height: 82.5%;
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1.5fr 1.5fr 0.5fr; 
+    gap: 0px; 
+    grid-template-areas: 
+    "Weather-Temp Weather-Temp"
+    "clouds wind"
+    "humidity visibility"
+    "pressure pressure"; 
+}
+
+.h{
+    text-align: center;
+
+}
+.Weather-Temp { grid-area: Weather-Temp; display: flex;align-items: center;flex-direction:row;justify-content: center;}
+.clouds { grid-area: clouds;font-weight: 600;display: flex;align-items: center;justify-content: center;font-size: 20px;background-color: rgba(0, 255, 255, 0.1); }
+.wind { grid-area: wind;display: flex;flex-direction: row;align-items: center;justify-content: center;font-size: 20px; }
+.visibility { grid-area: visibility;display: flex;flex-direction: row;align-items: center;justify-content: center;font-size: 20px; }
+
+
+.humidity { grid-area: humidity;display: flex;flex-direction: row;align-items: center;justify-content:center; }
+.pressure { grid-area: pressure;height: 100%;display: flex;flex-direction: row;align-items: center;justify-content: center;font-size: 20px;}
+
+footer{
+    clear: both;
+    text-align: center;
+    padding: 2%;
+    font-size: 20px;
+    color: black;
+}
+.hight{
+    height:10vh;
+}
+.display{display:none}
+
+
+
+@media(max-width:600px){
+    .contain{height: 100vh;}
+    .in{
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px;
+    }
+    h1{
+        padding: 6%;
+    }
+/* add to the class*/
+.hight{height: 15vh;position: relative;bottom:20px;}
+.up{display: none;}
+.img1{
+    width: 30%;
+    height: 100%;
+    padding: 2px;
+    
+}
+.img2{
+    width: 30%;
+    height: 45%;
+}
+.img3{
+    width: 25%;
+    height: 35%;
+    padding-right: 20px;
+}
+.img4{
+    width: 20%;
+    height: 100%;
+}
+}

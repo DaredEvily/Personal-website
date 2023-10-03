@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Great Vibes', cursive;
+}
+
+body{
+    background-color: #27374D;
+    color: #DDE6ED;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contain{
+    display: flex;
+    height: 99.8vh;
+    justify-content: center;
+    width: 100%;
+}
+
+.in{
+    height: 100%;
+    width: 100vh;
+}
+
+h1{
+    text-align: center;
+    margin: 3%;
+    padding: 2%;
+    font-size: 50px;
+}
+
+
+.dice{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;  
+    grid-template-areas: 
+    "player1 player2"; 
+    margin: 3%;
+    height: 74%;
+    gap: 15px;
+}
+
+.dice1{
+    grid-area:"player1";
+}
+
+.dice2{
+    grid-area: "player2";
+}
+
+.h{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    padding: 2%;
+    margin: 10%;
+}
+
+img{
+    align-self: center;
+    width: 100%;
+    height: 60%;
+    box-shadow: 10px 10px 15px #141414;
+}
+
+@media (max-width : 800px){
+    .dice{
+        display: block;
+    }
+    img{
+        width: 30%;
+        height: 70%;
+    }
+}

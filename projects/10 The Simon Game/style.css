@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    background-color: #001C30;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.contain{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+}
+
+h1{
+    text-align: center;
+    height: 40px;
+    font-size: 30px;
+    padding: 3%;
+    letter-spacing: 10px;
+    line-height: 120%;
+}
+
+.grid{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px;
+    grid-template-areas: 
+    "upleft upright"
+    "downleft downright"; 
+    height: 100%;
+}
+
+.h{
+    display: flex;
+}
+
+.h button{
+    width: 200px;
+    height: 200px;
+    font-size: 40px;
+    margin: 2% 5%;
+    border: 10px black solid;
+    border-radius: 40px;
+    color: white;
+}
+
+
+.upleft {
+    align-self: flex-end; 
+    justify-content: flex-end;
+    grid-area: upleft;
+}
+.upright {
+    grid-area: upright; 
+    align-self: flex-end;
+}
+.downleft { 
+    grid-area: downleft;
+    justify-content: flex-end;
+}
+.downright { grid-area: downright; }
+
+
+.right{background-color: red}
+.left{background-color: green;}
+.downr{background-color: blue;}
+.downl{background-color: yellow;}
+
+.pressed{box-shadow: 0px 5px 10px white;background-color:grey;opacity: .9;}
+.over{background-color: red;}
+
+footer{
+    text-align: center;
+    padding:2%;
+}
+
+@media(max-width:560px){
+    body{
+        height: 100%;
+    }
+    .grid{
+        gap: 5px;
+        margin-bottom: 20%;
+    }
+    h1{
+        width: 94%;
+        height: 100px;
+        margin: 25% 0% 10% 0%;
+        letter-spacing: 2px;
+        line-height: 120%;
+    }
+    .h{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .h button{
+        width: 99%;
+        height: 150px;
+        margin: 0% 0%;
+        border-radius: 15px;
+    }
+    .contain{
+        padding: 0px;
+        margin: 0px;
+        height: 90vh;
+    }
+
+    footer{
+        letter-spacing: 2px;
+        margin: 0px;
+        padding: 0px;
+        height: 50px;
+        width: 100%;
+    }
+}

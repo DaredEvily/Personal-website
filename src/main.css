@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+body{
+    background: url("../blurry-gradient-haikei.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* 
+    background:rgb(31,46,62);
+    background: radial-gradient(circle, rgba(31,46,62,1) 0%, rgba(12,18,24,1) 100%, rgba(23,35,46,1) 100%, rgba(0,0,0,1) 100%, rgba(2,0,30,1) 100%, rgba(0,0,0,1) 100%);
+ */
+
+}
+
