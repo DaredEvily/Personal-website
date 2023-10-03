@@ -52,7 +52,6 @@ const _nav = styled.div`
             padding: 5%;
             width: 100%;
             text-align: center;
-            border: 1px solid;
         }
     }
 `;
