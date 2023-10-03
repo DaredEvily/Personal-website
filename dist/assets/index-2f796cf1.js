@@ -88,7 +88,6 @@ Error generating stack: `+o.message+`
             padding: 5%;
             width: 100%;
             text-align: center;
-            border: 1px solid;
         }
     }
 `,_m=Fe.div`
