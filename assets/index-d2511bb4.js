@@ -220,7 +220,7 @@ p {
     border-bottom: 1px solid rgba(255, 255, 255, 0.373);
     text-align: center;
     width: 30%;
-    margin: 1% 0%;
+    margin: 3% 0% 2% 0% ;
     padding: 1% 0%;
     }
 `,Tm=Fe.div`
