@@ -2,21 +2,21 @@
     {
         "Title": "Dice game",
         "Des": "A simple game for random number selection between two players",
-        "Link": "../projects/8 DiceGame/index.html"
+        "Link": "https://daredevily.github.io/DiceGame.github.io/"
     },
     {
         "Title": "Drum kit",
         "Des": "Interactive drum pad for playing sounds via keyboard or mouse clicks",
-        "Link": "../projects/9 Drum Kit/index.html"
+        "Link": "https://daredevily.github.io/DrumKit.github.io/"
     },
     {
         "Title": "Simon game",
         "Des": "A memory-based game involving four colors played in sequence for user replication",
-        "Link": "../projects/10 The Simon Game/Index.html"
+        "Link": "https://daredevily.github.io/SimonGame.github.io/"
     },
     {
         "Title": "Weather app",
         "Des": "An application with a search bar to retrieve weather information for any desired location",
-        "Link": "../projects/11 Weather App/index.html"
+        "Link": "https://daredevily.github.io/WeatherApp.github.io/"
     }
 ]
