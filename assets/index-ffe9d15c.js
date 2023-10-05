@@ -90,6 +90,7 @@ Error generating stack: `+i.message+`
             text-align: center;
         }
     }
+    
 `,_m=Fe.div`
     ul {
     margin: 0;
@@ -154,9 +155,9 @@ p {
     font-size: 15px;
     padding: 1% 2%;
     border-radius: 15px;
-    transition: 0.3s ease;
+    transition: 0.3s ;
 
-    :hover {
+    &:hover {
     transform: scale(1.05, 1.05);
     }
 }
@@ -166,10 +167,11 @@ p {
     }
     @media (max-width:900px){
         margin-top: 18%;
-       
+    
     }
     @media (max-width:600px ),(max-width:450px){
         margin-top: 30%;
+        .btn{font-size:18px}
     }
 `,Nm=Fe.div`
     display: flex;
@@ -223,6 +225,10 @@ p {
     margin: 3% 0% 2% 0% ;
     padding: 1% 0%;
     }
+    @media (max-width:500px){
+        h1{width: 50%;
+        padding:3%}
+    }
 `,Tm=Fe.div`
     display: flex;
     flex-direction: row;
@@ -265,6 +271,7 @@ p {
     }
     .a:hover{transform:scale(1.1,1.1);}
     .a:active{background-color:black;border:1px solid;color:white}
+
     @media (max-width:1000px){
         width:40%;
         margin: 2%;
@@ -272,6 +279,10 @@ p {
     @media (max-width:600px){
         width: 50%;
     }
+    @media (max-width:500px){
+        width:70%
+    }
+
 `,Rm=Fe.div`
     .hide {
     background-color: rgb(31, 46, 62);
@@ -314,5 +325,8 @@ p {
             margin: 0;
         }
         p:first-child{text-align:center}
+    }
+    @media (max-width:500px){
+        p{font-size: 12px;}
     }
 `,Kf=({prob:e})=>{const[t,n]=$e.useState(!1),r=()=>{window.scrollY>=e?n(!0):n(!1)};return $e.useEffect(()=>{const l=()=>{r()};return window.addEventListener("scroll",l),()=>{window.removeEventListener("scroll",l)}},[e]),t},Im=()=>{const t=Kf({prob:10});return N.jsx(Rm,{children:N.jsxs(Cm,{className:t&&"hide",children:[N.jsx("h1",{children:N.jsx("a",{href:"#",children:"Ahmad G"})}),N.jsx(_m,{children:N.jsxs("ul",{children:[N.jsx("li",{children:N.jsx("a",{href:"#projects",children:"Projects"})}),N.jsx("li",{children:N.jsx("a",{href:"#about",children:"About"})})]})})]})})},Vl=({text:e,delay:t,loop:n})=>{const[r,l]=$e.useState(""),[i,o]=$e.useState(0);return $e.useEffect(()=>{let u;return i<e.length?u=setTimeout(()=>{l(s=>s+e[i]),o(s=>s+1)},t):n&&(o(0),l("")),()=>clearTimeout(u)},[i,t,n,e]),r},$m=()=>N.jsxs(Pm,{children:[N.jsxs("p",{children:["Greetings, I'm Ahmad,",N.jsx("br",{}),N.jsx("span",{children:N.jsx(Vl,{text:"A Full Stack Developer",delay:200})}),N.jsx("br",{}),"With a Knack for Exploring the World of Web Design."]}),N.jsx("a",{href:"#cv",download:"CV.pdf",class:"btn btn-primary",children:"Download CV"}),N.jsxs(Nm,{children:[N.jsx("a",{href:"https://github.com/DaredEvily",target:"_blank",children:N.jsx("i",{class:"fa-brands fa-github"})}),N.jsx("a",{href:"https://www.youtube.com/@ahmadgamal6802",target:"_blank",children:N.jsx("i",{class:"fa-brands fa-youtube"})}),N.jsx("a",{href:"https://www.linkedin.com/in/ahmad-gamal-88589a293/",target:"_blank",children:N.jsx("i",{class:"fa-brands fa-linkedin"})}),N.jsx("a",{href:"https://www.facebook.com/hackerCBI",target:"_blank",children:N.jsx("i",{class:"fa-brands fa-facebook"})})]})]}),Om=[{Title:"Dice game",Des:"A simple game for random number selection between two players",Link:"https://daredevily.github.io/DiceGame.github.io/"},{Title:"Drum kit",Des:"Interactive drum pad for playing sounds via keyboard or mouse clicks",Link:"https://daredevily.github.io/DrumKit.github.io/"},{Title:"Simon game",Des:"A memory-based game involving four colors played in sequence for user replication",Link:"https://daredevily.github.io/SimonGame.github.io/"},{Title:"Weather app",Des:"An application with a search bar to retrieve weather information for any desired location",Link:"https://daredevily.github.io/WeatherApp.github.io/"}],Dm=e=>N.jsxs(Lm,{children:[N.jsx("h2",{children:e.title}),N.jsx("p",{children:e.description}),N.jsx("a",{className:"a",href:e.link,children:"Go To Link"})]}),Mm=()=>{const t=Kf({prob:300});return N.jsxs(zm,{id:"projects",children:[t&&N.jsx("h1",{children:N.jsx(Vl,{text:"Projects",delay:100})}),N.jsx(Tm,{children:Om.map(n=>N.jsx(Dm,{title:n.Title,description:n.Des,link:n.Link}))})]})},Am=()=>N.jsxs(jm,{children:[N.jsx("h1",{id:"about",children:"About"}),N.jsxs("footer",{children:[N.jsx("p",{children:"Made With ❤ By © Ahmad Gamal"}),N.jsxs("p",{children:["Tel : ",N.jsx(Vl,{text:"+201274251097",delay:400})," ",N.jsx("br",{}),"Email : ",N.jsx(Vl,{text:"ahmedjokar08@gmail.com",delay:300})]})]})]}),Fm=()=>{const[e,t]=$e.useState(!0);let n=0;const r=()=>{const l=window.pageYOffset||document.documentElement.scrollTop;l>n?t(!1):t(!0),n=l};return $e.useEffect(()=>(window.addEventListener("scroll",r),()=>window.removeEventListener("scroll",r)),[]),N.jsx(xm,{children:N.jsxs(Em,{children:[e&&N.jsx(Im,{}),N.jsx($m,{}),N.jsx(Mm,{}),N.jsx(Am,{})]})})};const Um=document.getElementById("root");Wi.createRoot(Um).render(N.jsx(N.Fragment,{children:N.jsx(Fm,{})}));
