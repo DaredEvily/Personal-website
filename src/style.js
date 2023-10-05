@@ -304,7 +304,7 @@ const _footer = styled.div`
         p:first-child{text-align:center}
     }
     @media (max-width:500px){
-        p{font-size: 12px;}
+        p{font-size: 10px;}
     }
 `
 
