@@ -120,11 +120,10 @@ p {
 }
 
 .btn {
-    font-size: 15px;
-    padding: 1% 2%;
+    font-size: 20px;
+    padding: 1% 5%;
     border-radius: 15px;
     transition: 0.3s ;
-
     &:hover {
     transform: scale(1.05, 1.05);
     }

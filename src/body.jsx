@@ -12,7 +12,7 @@ export default ()=>(
         <br/>
         With a Knack for Exploring the World of Web Design.
         </p>
-        <a  href="#cv" download="CV.pdf" class="btn btn-primary">Download CV</a>
+        <a  href="https://daredevily.github.io/CV/" class="btn btn-primary">Visit CV</a>
         <_icons>
         <a href="https://github.com/DaredEvily" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.youtube.com/@ahmadgamal6802" target="_blank"><i class="fa-brands fa-youtube"></i></a>
