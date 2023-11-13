@@ -18,5 +18,10 @@
         "Title": "Weather app",
         "Des": "An application with a search bar to retrieve weather information for any desired location",
         "Link": "https://daredevily.github.io/WeatherApp.github.io/"
+    },
+    {
+        "Title": "ArcGis Map",
+        "Des":"A mapping application powered by ArcGIS, offering advanced geospatial features",
+        "Link":"https://daredevily.github.io/map/"
     }
 ]
